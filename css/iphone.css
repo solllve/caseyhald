@@ -1,0 +1,52 @@
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px)
+    {
+      h1 {
+        font-size: 82px;
+      }
+      h2 {
+        font-size: 52px;
+      }
+      p, ul, li {
+        font-size: 38px!important;
+        line-height: 50px;
+      }
+      .paragraph {
+        max-width: 100%;
+        padding: 25px;
+      }
+      .logo {
+        width: 80%;
+      }
+      .menu ul {
+        font-size: 62px;
+      }
+      .portfolio-thumbnails__thumbnail {
+        width: 50%;
+        float: left;
+        height: 350px;
+      }
+      .portfolio-thumbnails__thumbnail h2 {
+        font-size: 38px;
+      }
+      .menu ul .icon {
+        font-size: 68px!important;
+      }
+      .work--close {
+        font-size: 48px!important;
+      }
+      .menu {
+        position: absolute;
+        top: inherit;
+        top: 45px;
+        right: 0px;
+      }
+      .menu ul li {
+        margin: 0 40px 0 0;
+      }
+      .img--thumb.--full img {
+      	max-width: 100%;
+      }
+  }
