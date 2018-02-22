@@ -84,7 +84,7 @@ a {
   top: 0px;
   right: 0px;
   margin: 30px;
-  z-index: 2;
+  z-index: 8;
 }
 .menu ul {
   font-size: 32px;
@@ -108,7 +108,7 @@ a {
   text-align: center;
   clear: both;
   width: 100%;
-  z-index: 4;
+  z-index: 9;
 }
 .work__container {
   display: none;
@@ -128,6 +128,13 @@ a {
   position: fixed;
   right: 25px;
 	top: 25px;
+	z-index: 7;
+  cursor: pointer;
+}
+.contact--close {
+  position: absolute;
+  right: 15px;
+	top: 15px;
 	z-index: 7;
   cursor: pointer;
 }
@@ -173,6 +180,7 @@ header {
 	display: inline-block;
 	text-align: left;
 	max-width: 650px;
+	position: relative;
 }
 .contact-container h1,.contact-container .paragraph {
 	margin-top: 0px;
@@ -473,6 +481,61 @@ a:hover {
 		-webkit-transform: translateX(0%);
 	}
 }
+
+.--slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
 .blur {
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='6');
     -webkit-filter: url(#blur-filter);
@@ -494,6 +557,6 @@ img.medium__bg {
   filter: alpha(opacity=50);
 }
 p {
-	margin: 0px;
+	margin: 10px 0 0 0;
 	padding: 0px;
 }

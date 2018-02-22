@@ -3,6 +3,7 @@ var $links = $('.menu li a');
 var $portfolioToggle = $('[data-toggle="portfolio"]');
 var $contactMe = $('[data-toggle="contact-me"]');
 var $portfolioClose = $('[data-toggle="portfolio--close"]');
+var $contactClose = $('[data-toggle="contact--close"]');
 var $portfolio = $('.work');
 var $body = $('body');
 var $logo = $('.logo');
@@ -29,7 +30,13 @@ $portfolioToggle.click(function(){
 
 $contactMe.click(function(){
   $('[data-toggle="show--contact"]').removeClass('--hide');
-  $('.contact-container').addClass('--slideLeft');
+  $('.contact-container').addClass('--slideDown');
+  $('.contact-container').fadeIn(1000);
+});
+
+$contactClose.click(function(){
+  $('.contact-container').fadeOut(1000);
+  $('[data-toggle="show--contact"]').delay(1000).addClass('--hide');
 });
 
 $portfolioClose.click(function(){
