@@ -29,6 +29,7 @@ $portfolioToggle.click(function(){
 
 $contactMe.click(function(){
   $('[data-toggle="show--contact"]').removeClass('--hide');
+  $('.contact-container').addClass('--slideLeft');
 });
 
 $portfolioClose.click(function(){

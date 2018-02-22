@@ -13,11 +13,11 @@
 	font-family: 'SSSocial';
 	font-style: normal;
 	font-weight: normal;
-	src: url('../fonts/ss-social.eot');
-	src: url('../fonts/ss-social.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ss-social.woff') format('woff'),
-		url('../fonts/ss-social.ttf') format('truetype'),
-		url('../fonts/ss-social.svg#SSStandard') format('svg');
+	src: url('../fonts/ss-social-regular.eot');
+	src: url('../fonts/ss-social-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ss-social-regular.woff') format('woff'),
+		url('../fonts/ss-social-regular.ttf') format('truetype'),
+		url('../fonts/ss-social-regular.svg#SSStandard') format('svg');
 }
 /* styles */
 html {
@@ -417,6 +417,60 @@ a:hover {
 	}
 	100% {
 		-webkit-transform: translateY(0%);
+	}
+}
+.--slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}
+	50%{
+		transform: translateX(-8%);
+	}
+	65%{
+		transform: translateX(4%);
+	}
+	80%{
+		transform: translateX(-4%);
+	}
+	95%{
+		transform: translateX(2%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+	50%{
+		-webkit-transform: translateX(-8%);
+	}
+	65%{
+		-webkit-transform: translateX(4%);
+	}
+	80%{
+		-webkit-transform: translateX(-4%);
+	}
+	95%{
+		-webkit-transform: translateX(2%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
 	}
 }
 .blur {
