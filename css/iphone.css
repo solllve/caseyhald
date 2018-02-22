@@ -53,4 +53,13 @@
       .img--thumb.--full img {
       	max-width: 100%;
       }
+      .contact-container {
+        max-width: 100%;
+      }
+      .casey-hald {
+      	height: 450px;
+      }
+      .contact-container .paragraph ul li {
+        padding: 10px 0 0 0;
+      }
   }
