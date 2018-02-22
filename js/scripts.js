@@ -1,6 +1,7 @@
 // Variables
 var $links = $('.menu li a');
 var $portfolioToggle = $('[data-toggle="portfolio"]');
+var $contactMe = $('[data-toggle="contact-me"]');
 var $portfolioClose = $('[data-toggle="portfolio--close"]');
 var $portfolio = $('.work');
 var $body = $('body');
@@ -24,6 +25,10 @@ $logo.click(function(){
 $portfolioToggle.click(function(){
   $portfolio.slideDown();
   $portfolio.find('.work__container').delay(500).fadeIn(1000);
+});
+
+$contactMe.click(function(){
+  $('[data-toggle="show--contact"]').removeClass('--hide');
 });
 
 $portfolioClose.click(function(){
@@ -73,10 +78,3 @@ $modalFull.click(function(e){
   $this.html('');
   $workBody.removeClass('blur');
 });
-
-//if ($(window).width() < 960) {
-//   alert('Less than 960');
-//}
-//else {
-//   alert('More than 960');
-//}
