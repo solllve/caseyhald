@@ -5,9 +5,13 @@
     {
       h1 {
         font-size: 82px;
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: normal;
       }
       h2 {
         font-size: 52px;
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: normal;
       }
       p, ul, li {
         font-size: 38px!important;
