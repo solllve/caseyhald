@@ -247,7 +247,7 @@ header {
 	display: none;
 }
 .img--thumb.--full img {
-	max-width: 650px;
+	max-width: 1150px;
 }
 .portfolio-thumbnails__thumbnail img {
   width: 85%;
