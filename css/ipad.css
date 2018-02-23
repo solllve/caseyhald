@@ -1,0 +1,11 @@
+@media only screen
+    and (max-device-width: 1150px),
+    only screen and (max-device-width: 1150px),
+    only screen and (max-width: 960px)
+    {
+      .portfolio-thumbnails__thumbnail {
+        width: 50%;
+        float: left;
+        height: 350px;
+      }
+    }
