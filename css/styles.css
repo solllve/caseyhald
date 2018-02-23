@@ -231,6 +231,16 @@ header {
 	padding: 0px;
 	cursor: pointer;
 }
+.video__inner {
+	max-height: 275px;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+.video__inner video {
+	position: relative;
+	max-height: 275px;
+}
 .img--thumb.--full {
 	max-height: inherit;
 	height: 100%;
