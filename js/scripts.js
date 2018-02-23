@@ -109,3 +109,13 @@ $modalFull.click(function(e){
   $this.html('');
   $workBody.removeClass('blur');
 });
+
+window.onresize = function(event) {
+  var $thumbnails = $('.portfolio-thumbnails__thumbnail');
+  if ($(window).width() < 960) {
+     $thumbnails.addClass('--tablet');
+  }
+  else {
+    $thumbnails.removeClass('--tablet');
+  }
+};

@@ -212,6 +212,13 @@ header {
   background: linear-gradient(to bottom right, #d000fd, #42a8e8);
 	display: table;
 }
+.portfolio-thumbnails__thumbnail.--tablet {
+	width: 50%;
+}
+.portfolio-thumbnails__thumbnail.--tablet .video__inner video {
+	max-height: inherit;
+	width: 100%;
+}
 .portfolio__inner {
 	vertical-align: middle;
 	display: table-cell;
