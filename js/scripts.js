@@ -12,9 +12,31 @@ var $gif = $('[data-src="gif"]');
 var $imgThumb = $('.img--thumb').not('.--full');
 var $modalFull = $('.img--thumb.--full');
 var $workBody = $('.work');
+var $contactContainer = $('.contact-container');
+var $contactDataToggle = $('[data-toggle="show--contact"]');
 
+//Functions
+function showPortfolio() {
+  $portfolio.slideDown();
+  $portfolio.find('.work__container').delay(500).fadeIn(1000);
+}
+function closePortfolio() {
+  $portfolio.hide();
+  $portfolio.find('.work__container').hide();
+}
+function showContact() {
+  $contactDataToggle.removeClass('--hide');
+  $contactContainer.addClass('--slideDown').show();
+}
+function closeContact() {
+  $contactContainer.fadeOut(1000);
+  $contactDataToggle.delay(1000).addClass('--hide');
+}
+
+//Miscellaneous
 $logo.fadeIn(2000);
 
+//Commands
 $portfolioToggle.mouseover(function(){
   $body.addClass('gradient-bg');
 });
@@ -25,32 +47,24 @@ $logo.click(function(){
 });
 
 $portfolioToggle.click(function(){
-  $portfolio.slideDown();
-  $portfolio.find('.work__container').delay(500).fadeIn(1000);
+  showPortfolio();
 });
 
 $contactMe.click(function(){
-  $('[data-toggle="show--contact"]').removeClass('--hide');
-  $('.contact-container').addClass('--slideDown');
-  $('.contact-container').fadeIn(1000);
+  showContact();
 });
 
 $contactClose.click(function(){
-  $('.contact-container').fadeOut(1000);
-  $('[data-toggle="show--contact"]').delay(1000).addClass('--hide');
+  closeContact();
 });
 
 $portfolioClose.click(function(){
-  $portfolio.slideUp();
-  $portfolio.find('.work__container').hide();
+  closePortfolio();
 });
 
 $portfolioCloseContact.click(function(){
-  $portfolio.slideUp();
-  $portfolio.find('.work__container').hide();
-  $('[data-toggle="show--contact"]').removeClass('--hide');
-  $('.contact-container').addClass('--slideDown');
-  $('.contact-container').fadeIn(1000);
+  closePortfolio();
+  showContact();
 });
 
 $links.mouseout(function(){
