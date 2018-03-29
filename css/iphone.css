@@ -28,9 +28,6 @@
       .portfolio-thumbnails__thumbnail h2 {
         font-size: 38px;
       }
-      .work--close, .contact--close  {
-        font-size: 48px!important;
-      }
       .img--thumb.--full img {
       	max-width: 100%;
       }
@@ -61,5 +58,8 @@
       }
       .paragraph {
         padding-bottom: 0px;
+      }
+      .casey-hald {
+        height: 150px;
       }
   }
