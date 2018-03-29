@@ -1,19 +1,19 @@
 // Variables
-var $links = $('.menu li a');
-var $portfolioToggle = $('[data-toggle="portfolio"]');
-var $contactMe = $('[data-toggle="contact-me"]');
-var $portfolioClose = $('[data-toggle="portfolio--close"]');
-var $portfolioCloseContact = $('[data-toggle="portfolio--close-contact"]');
-var $contactClose = $('[data-toggle="contact--close"]');
-var $portfolio = $('.work');
-var $body = $('body');
-var $logo = $('.logo');
-var $gif = $('[data-src="gif"]');
-var $imgThumb = $('.img--thumb').not('.--full');
-var $modalFull = $('.img--thumb.--full');
-var $workBody = $('.work');
-var $contactContainer = $('.contact-container');
-var $contactDataToggle = $('[data-toggle="show--contact"]');
+const $links = $('.menu li a');
+const $portfolioToggle = $('[data-toggle="portfolio"]');
+const $contactMe = $('[data-toggle="contact-me"]');
+const $portfolioClose = $('[data-toggle="portfolio--close"]');
+const $portfolioCloseContact = $('[data-toggle="portfolio--close-contact"]');
+const $contactClose = $('[data-toggle="contact--close"]');
+const $portfolio = $('.work');
+const $body = $('body');
+const $logo = $('.logo');
+const $gif = $('[data-src="gif"]');
+const $imgThumb = $('.img--thumb').not('.--full');
+const $modalFull = $('.img--thumb.--full');
+const $workBody = $('.work');
+const $contactContainer = $('.contact-container');
+const $contactDataToggle = $('[data-toggle="show--contact"]');
 
 //Functions
 function showPortfolio() {
@@ -63,7 +63,6 @@ $portfolioClose.click(function(){
 });
 
 $portfolioCloseContact.click(function(){
-  closePortfolio();
   showContact();
 });
 
