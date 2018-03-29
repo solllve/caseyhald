@@ -22,7 +22,7 @@
       .portfolio-thumbnails__thumbnail {
         width: 50%;
         float: left;
-        height: 150px!important;
+        height: 350px!important;
         overflow: hidden;
       }
       .portfolio-thumbnails__thumbnail h2 {
