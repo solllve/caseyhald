@@ -3,55 +3,39 @@
     only screen and (max-device-width: 667px),
     only screen and (max-width: 480px)
     {
-      h1 {
-        font-size: 82px;
-        font-family: 'Fjalla One', sans-serif;
-        font-weight: normal;
+      h1, h2 {
+        font-size: 21px;
       }
-      h2 {
-        font-size: 52px;
-        font-family: 'Fjalla One', sans-serif;
-        font-weight: normal;
+      p {
+        font-size: 14px;
+        padding-left: 15px;
       }
-      p, ul, li {
-        font-size: 38px!important;
-        line-height: 50px;
+      .paragraph ul {
+        padding-left: 15px;
       }
-      .paragraph {
-        max-width: 100%;
-        padding: 25px;
+      .paragraph ul li {
+        font-size: 14px;
       }
       .logo {
         width: 80%;
       }
-      .menu ul {
-        font-size: 62px;
-      }
       .portfolio-thumbnails__thumbnail {
         width: 50%;
         float: left;
-        height: 350px;
+        height: 150px!important;
+        overflow: hidden;
       }
       .portfolio-thumbnails__thumbnail h2 {
         font-size: 38px;
       }
-      .menu ul .icon {
-        font-size: 68px!important;
-      }
       .work--close, .contact--close  {
         font-size: 48px!important;
       }
-      .menu {
-        position: absolute;
-        top: inherit;
-        top: 45px;
-        right: 0px;
-      }
-      .menu ul li {
-        margin: 0 40px 0 0;
-      }
       .img--thumb.--full img {
       	max-width: 100%;
+      }
+      .img--thumb {
+        max-height: 100px;
       }
       .contact-container {
         max-width: 100%;
@@ -62,5 +46,20 @@
       }
       .contact-container .paragraph ul li {
         padding: 10px 0 0 0;
+      }
+      .portfolio__inner h2 {
+        font-size: 24px;
+      }
+      .portfolio__inner {
+        overflow: hidden;
+      }
+      .video__inner video {
+        max-height: 100px;
+      }
+      .paragraph ul {
+        width: 350px;
+      }
+      .paragraph {
+        padding-bottom: 0px;
       }
   }

@@ -313,6 +313,7 @@ h2 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 36px;
   color: #000;
+	margin-bottom: 10px;
 }
 .blue {
 	color: #42a8e8;
@@ -320,11 +321,12 @@ h2 {
 .paragraph {
   text-align: left;
   max-width: 650px;
-	line-height: 28px;
+	line-height: 24px;
   position: relative;
   margin: 0 auto;
-	padding: 0 0 25px 0;
+	padding: 15px 0 25px 0;
 	clear: both;
+	font-size: 16px;
 }
 .paragraph ul {
 	list-style-type: none;
@@ -334,6 +336,9 @@ h2 {
 	clear: both;
 	width: 100%;
 	display: inline-block;
+}
+.paragraph ul {
+	margin: 15px 0 25px 0;
 }
 .paragraph ul li {
 	float: left;

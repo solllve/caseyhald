@@ -6,6 +6,10 @@
       .portfolio-thumbnails__thumbnail {
         width: 50%;
         float: left;
-        height: 350px;
+        height: 150px!important;
+        overflow: hidden;
+      }
+      .portfolio__inner {
+        overflow: hidden;
       }
     }
