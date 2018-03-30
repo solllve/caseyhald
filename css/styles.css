@@ -315,6 +315,7 @@ h2 {
   font-size: 36px;
   color: #000;
 	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 .blue {
 	color: #42a8e8;
