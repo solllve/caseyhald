@@ -33,9 +33,6 @@ function closeContact() {
   $contactDataToggle.delay(1000).addClass('--hide');
 }
 
-//Miscellaneous
-$logo.fadeIn(2000);
-
 //Commands
 $portfolioToggle.mouseover(function(){
   $body.addClass('gradient-bg');
