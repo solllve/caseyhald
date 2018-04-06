@@ -80,16 +80,6 @@ $(window).scroll(function() {
    }
 });
 
-$imgThumb.mouseover(function(e){
-  var $this = $(this);
-  $this.addClass('--floating');
-});
-
-$imgThumb.mouseout(function(e){
-  var $this = $(this);
-  $this.removeClass('--floating');
-});
-
 $imgThumb.click(function(e){
   var $this = $(this);
   var $imgURL = $this.find('img').attr('src');
