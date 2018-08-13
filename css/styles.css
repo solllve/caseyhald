@@ -33,11 +33,9 @@ body {
   margin: 0px;
   padding: 0px;
 	height: 100%;
-	background: url('../img/casey-bg-2.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  animation-name: colorchange;
+	animation-iteration-count: infinite;
+  animation-duration: 15s;
 }
 img.making--things {
 	width: 100%;
@@ -110,9 +108,9 @@ a {
 }
 .logo--work {
   position: relative;
-  margin: 45px 0 25px 0;
+  margin: 85px 0 85px 0;
   padding: 0px;
-  width: 170px;
+  width: 100px;
   z-index: 3;
 	cursor: pointer;
 }
@@ -138,6 +136,12 @@ a {
 	text-decoration: none;
 	cursor: pointer
 }
+.menu ul li a {
+	color: #fff;
+}
+.menu ul li a.--purple {
+	color: #d000fd;
+}
 .work {
   background: #fff;
   text-align: center;
@@ -148,7 +152,8 @@ a {
 .work__header {
   position: relative;
   margin: 0px;
-  padding: 15px 15px 0px 15px;
+  padding: 0px;
+	background-color: #efefef;
 }
 .icon {
   font-family: 'SSStandard';
@@ -189,6 +194,11 @@ header {
 	position: relative;
 	display: inline-block;
 	clear: both;
+	padding: 75px 0 75px 0;
+}
+header p .icon {
+	position: relative;
+	top: 2px;
 }
 .contact {
 	position: absolute;
@@ -214,22 +224,34 @@ header {
 	max-width: 650px;
 	position: relative;
 }
-
+.contact-container h1 {
+	background: -webkit-linear-gradient(#d000fd, #42a8e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .contact-container h1,.contact-container .paragraph {
 	margin-top: 0px;
 	margin-left: 0px;
 	display: inline;
+	clear: none;
 }
 .contact-container .paragraph ul {
 	width: inherit;
 	display: inline;
 }
-
+.contact-container .paragraph ul li {
+	padding: 5px 0 5px 0;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.contact-container .paragraph ul li:first-of-type {
+	padding-top: 15px;
+}
 .casey-hald {
 	height: 350px;
 	float: left;
 	border-radius: 5px;
-	margin: 0 15px 15px 0;
+	margin: 0 15px 0px 0;
 }
 .portfolio-thumbnails__thumbnail {
   width: 33%;
@@ -257,6 +279,12 @@ header {
 	display: table-cell;
 	position: relative;
 	z-index: 2;
+}
+.portfolio__inner h2 {
+	font-size: 34px;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: .4px;
 }
 .portfolio__inner h2 a {
 	color: #fff;
@@ -315,10 +343,11 @@ h1 {
 }
 h2 {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 36px;
-  color: #000;
-	margin-bottom: 10px;
+  font-size: 26px;
+	margin-bottom: 45px;
+	letter-spacing: 4px;
 	text-transform: uppercase;
+	color: #000;
 }
 .blue {
 	color: #42a8e8;
@@ -329,21 +358,23 @@ h2 {
 	line-height: 24px;
   position: relative;
   margin: 0 auto;
-	padding: 15px 0 25px 0;
+	padding: 0px 0 25px 0;
 	clear: both;
 	font-size: 16px;
 }
+.paragraph p {
+	font-size: 14px;
+	line-height: 25px;
+	color: #afafaf;
+}
 .paragraph ul {
 	list-style-type: none;
-	margin: 10px 0 10px 0;
+	margin: 5px 0 10px 0;
 	padding: 0px;
 	position: relative;
 	clear: both;
 	width: 100%;
 	display: inline-block;
-}
-.paragraph ul {
-	margin: 15px 0 25px 0;
 }
 .paragraph ul li {
 	float: left;
@@ -613,7 +644,7 @@ img.medium__bg {
   filter: alpha(opacity=50);
 }
 p {
-	margin: 10px 0 0 0;
+	margin: 0px 0px 10px 0px;
 	padding: 0px;
 }
 .arrow {

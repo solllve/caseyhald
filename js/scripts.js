@@ -105,3 +105,12 @@ window.onresize = function(event) {
     $thumbnails.removeClass('--tablet');
   }
 };
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() >= 500) {
+      $('.menu ul li a').addClass('--purple')
+    }
+    if ($(this).scrollTop() <= 500) {
+      $('.menu ul li a').removeClass('--purple')
+    }
+});

@@ -5,6 +5,7 @@
     {
       h1, h2 {
         font-size: 21px;
+        line-height: inherit;
       }
       p {
         font-size: 14px;
