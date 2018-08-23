@@ -115,7 +115,7 @@ a {
 	cursor: pointer;
 }
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   margin: 30px;
